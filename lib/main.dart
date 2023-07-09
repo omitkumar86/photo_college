@@ -4,8 +4,11 @@ import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:get/get_navigation/src/routes/get_route.dart';
 import 'package:photo_college/utils/app_constants.dart';
 import 'package:photo_college/view/screen/splash/splash_screen.dart';
+import 'di_container.dart' as di;
 
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await di.init();
   runApp(const MyApp());
 }
 
