@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:get/get_navigation/src/routes/get_route.dart';
 import 'package:photo_college/utils/app_constants.dart';
+import 'package:photo_college/view/screen/on_boarding/on_boarding_screen_01.dart';
 import 'package:photo_college/view/screen/splash/splash_screen.dart';
 import 'di_container.dart' as di;
 
@@ -33,6 +34,7 @@ class MyApp extends StatelessWidget {
             initialRoute: SplashScreen.routeName,
             getPages: [
               GetPage(name: SplashScreen.routeName, page: () => SplashScreen()),
+              GetPage(name: OnBoardingScreen01.routeName, page: () => OnBoardingScreen01()),
             ],
           );
         });

@@ -2,6 +2,12 @@ import 'package:flutter/material.dart';
 
 class AppColorResources {
   static const Color scaffoldBgColor = Color(0xffFFFFFF);
+  static const Color primaryBlack = Color(0xff000000);
+  static const Color circleColor = Color(0xffD0DCC9);
+  static const Color borderColor = Color(0xff999797);
+  static const Color circleColor2 = Color(0xffB29B9B);
+  static const Color primaryWhite = Color(0xffffffff);
+  static const Color cameraColor = Colors.deepOrange;
 
 
 
