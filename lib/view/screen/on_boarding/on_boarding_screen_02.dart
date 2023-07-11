@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:photo_college/view/screen/home/home_screen.dart';
-import 'package:photo_college/view/screen/on_boarding/on_boarding_screen_02.dart';
 import '../../../utils/app_color_resources.dart';
 import '../../../utils/app_style.dart';
+import '../home/home_screen.dart';
+import 'on_boarding_screen_03.dart';
 
-class OnBoardingScreen01 extends StatelessWidget {
-  static const String routeName = '/on_boarding_screen_01';
-  const OnBoardingScreen01({super.key});
+class OnBoardingScreen02 extends StatelessWidget {
+  static const String routeName = '/on_boarding_screen_02';
+  const OnBoardingScreen02({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class OnBoardingScreen01 extends StatelessWidget {
       body: Container(
         height: double.infinity,
         width: double.infinity,
-        decoration: BoxDecoration(image: DecorationImage(image: AssetImage('assets/images/on_boarding_01.jpg'), fit: BoxFit.cover)),
+        decoration: BoxDecoration(image: DecorationImage(image: AssetImage('assets/images/on_boarding_02.jpg'), fit: BoxFit.cover)),
       ),
       bottomNavigationBar: Container(
         color: AppColorResources.onBoardingScreenColor,
@@ -39,9 +39,9 @@ class OnBoardingScreen01 extends StatelessWidget {
 
             Row(
               children: [
-                Image.asset('assets/images/first.png'),
-                SizedBox(width: 8.w,),
                 Image.asset('assets/images/second.png'),
+                SizedBox(width: 8.w,),
+                Image.asset('assets/images/first.png'),
                 SizedBox(width: 8.w,),
                 Image.asset('assets/images/third.png'),
               ],
@@ -49,7 +49,7 @@ class OnBoardingScreen01 extends StatelessWidget {
 
             InkWell(
               onTap: (){
-                Get.offNamedUntil(OnBoardingScreen02.routeName, (route) => false);
+                Get.offNamedUntil(OnBoardingScreen03.routeName, (route) => false);
               },
               child: Container(
                 alignment: Alignment.center,
@@ -75,7 +75,6 @@ class OnBoardingScreen01 extends StatelessWidget {
                 ),
               ),
             ),
-
           ],
         ),
       ),

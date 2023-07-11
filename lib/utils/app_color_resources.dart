@@ -8,6 +8,10 @@ class AppColorResources {
   static const Color circleColor2 = Color(0xffB29B9B);
   static const Color primaryWhite = Color(0xffffffff);
   static const Color cameraColor = Colors.deepOrange;
+  static const Color onBoardingScreenColor = Color(0xff262626);
+  static const Color primaryGreen = Color(0xff008000);
+  static const Color homeCircleColor = Color(0xffB1B1B1);
+  static const Color primaryDeepNavy = Color(0xff0F2333);
 
 
 

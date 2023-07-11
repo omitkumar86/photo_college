@@ -24,13 +24,13 @@ class SplashScreen extends StatelessWidget {
               fit: BoxFit.cover),
         ),
         child: Container(
-          alignment: Alignment.center,
+          alignment: Alignment.bottomCenter,
           height: double.infinity,
           width: double.infinity,
-          color: AppColorResources.primaryBlack.withOpacity(0.5),
+          color: AppColorResources.primaryBlack.withOpacity(0.7),
           child: SingleChildScrollView(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.end,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 /// For Circle
@@ -79,23 +79,33 @@ class SplashScreen extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
 
-                /// For Loading Indicator
-                //Lottie.asset('assets/lottie/loading.json',),
-
                 SizedBox(
-                  height: 30.h,
+                  height: 80.h,
                 ),
+
+                /// For Loading Indicator
                 Container(
-                  alignment: Alignment.center,
-                  height: 130.h,
-                  width: 130.w,
-                  decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: AppColorResources.circleColor),
+                  height: 200.h,
+                  width: 200.w,
                   child: Lottie.asset(
                     'assets/lottie/loading.json',
                   ),
                 ),
+
+                // SizedBox(
+                //   height: 100.h,
+                // ),
+                // Container(
+                //   alignment: Alignment.center,
+                //   height: 130.h,
+                //   width: 130.w,
+                //   decoration: BoxDecoration(
+                //       shape: BoxShape.circle,
+                //       color: AppColorResources.circleColor),
+                //   child: Lottie.asset(
+                //     'assets/lottie/loading.json',
+                //   ),
+                // ),
               ],
             ),
           ),
