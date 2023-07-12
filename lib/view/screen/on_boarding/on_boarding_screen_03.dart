@@ -17,7 +17,9 @@ class OnBoardingScreen03 extends StatelessWidget {
       body: Container(
         height: double.infinity,
         width: double.infinity,
-        decoration: BoxDecoration(image: DecorationImage(image: AssetImage('assets/images/on_boarding_03.jpg'), fit: BoxFit.cover)),
+        decoration: BoxDecoration(image: DecorationImage(
+            opacity: 0.7,
+            image: AssetImage('assets/images/on_boarding_03.jpg'), fit: BoxFit.cover)),
       ),
       bottomNavigationBar: Container(
         color: AppColorResources.onBoardingScreenColor,

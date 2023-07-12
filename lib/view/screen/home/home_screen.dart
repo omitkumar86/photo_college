@@ -22,7 +22,7 @@ class HomeScreen extends StatelessWidget {
           alignment: Alignment.center,
           height: double.infinity,
           width: double.infinity,
-          color: AppColorResources.primaryBlack.withOpacity(0.6),
+          color: AppColorResources.primaryBlack.withOpacity(0.8),
           child: SingleChildScrollView(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -46,50 +46,62 @@ class HomeScreen extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      InkWell(
-                        onTap: (){},
-                        child: Container(
-                          alignment: Alignment.center,
-                          height: 125.h,
-                          width: 125.w,
-                          decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              color: AppColorResources.homeCircleColor),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Icon(Icons.dashboard, color: AppColorResources.primaryDeepNavy,),
-                              Text(
-                                "Photo College",
-                                style: myStyleAbel(
-                                    16.sp, AppColorResources.primaryDeepNavy, FontWeight.w600),
+                      Expanded(
+                        child: InkWell(
+                          onTap: (){},
+                          child: Container(
+                            alignment: Alignment.center,
+                            height: 125.h,
+                            width: 130.w,
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                  color: Colors.black54
                               ),
-                            ],
+                                shape: BoxShape.circle,
+                                color: AppColorResources.homeCircleColor),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Icon(Icons.dashboard, color: AppColorResources.primaryDeepNavy,),
+                              SizedBox(height: 2.h,),
+                                Text(
+                                  "Photo College",
+                                  style: myStyleAbel(
+                                      16.sp, AppColorResources.primaryDeepNavy, FontWeight.w600),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ),
                       SizedBox(
                         width: 30.h,
                       ),
-                      InkWell(
-                        onTap: (){},
-                        child: Container(
-                          alignment: Alignment.center,
-                          height: 125.h,
-                          width: 125.w,
-                          decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              color: AppColorResources.homeCircleColor),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Icon(Icons.edit, color: AppColorResources.primaryDeepNavy,),
-                              Text(
-                                "Photo Edit",
-                                style: myStyleAbel(
-                                    16.sp, AppColorResources.primaryDeepNavy, FontWeight.w600),
-                              ),
-                            ],
+                      Expanded(
+                        child: InkWell(
+                          onTap: (){},
+                          child: Container(
+                            alignment: Alignment.center,
+                            height: 125.h,
+                            width: 130.w,
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                    color: Colors.black54
+                                ),
+                                shape: BoxShape.circle,
+                                color: AppColorResources.homeCircleColor),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Icon(Icons.camera_rounded, color: AppColorResources.primaryDeepNavy,),
+                                SizedBox(height: 2.h,),
+                                Text(
+                                  "Photo Edit",
+                                  style: myStyleAbel(
+                                      16.sp, AppColorResources.primaryDeepNavy, FontWeight.w600),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ),
@@ -104,56 +116,141 @@ class HomeScreen extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      InkWell(
-                        onTap: (){},
-                        child: Container(
-                          alignment: Alignment.center,
-                          height: 125.h,
-                          width: 125.w,
-                          decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              color: AppColorResources.homeCircleColor),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Icon(Icons.style, color: AppColorResources.primaryDeepNavy,),
-                              Text(
-                                "Free Style",
-                                style: myStyleAbel(
-                                    16.sp, AppColorResources.primaryDeepNavy, FontWeight.w600),
-                              ),
-                            ],
+                      Expanded(
+                        child: InkWell(
+                          onTap: (){},
+                          child: Container(
+                            alignment: Alignment.center,
+                            height: 125.h,
+                            width: 130.w,
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                    color: Colors.black54
+                                ),
+                                shape: BoxShape.circle,
+                                color: AppColorResources.homeCircleColor),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Icon(Icons.style, color: AppColorResources.primaryDeepNavy,),
+                                SizedBox(height: 2.h,),
+                                Text(
+                                  "Free Style",
+                                  style: myStyleAbel(
+                                      16.sp, AppColorResources.primaryDeepNavy, FontWeight.w600),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ),
                       SizedBox(
                         width: 30.h,
                       ),
-                      InkWell(
-                        onTap: (){},
-                        child: Container(
-                          alignment: Alignment.center,
-                          height: 125.h,
-                          width: 125.w,
-                          decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              color: AppColorResources.homeCircleColor),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Icon(Icons.layers, color: AppColorResources.primaryDeepNavy,),
-                              Text(
-                                "Remove BG",
-                                style: myStyleAbel(
-                                    16.sp, AppColorResources.primaryDeepNavy, FontWeight.w600),
-                              ),
-                            ],
+                      Expanded(
+                        child: InkWell(
+                          onTap: (){},
+                          child: Container(
+                            alignment: Alignment.center,
+                            height: 125.h,
+                            width: 130.w,
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                    color: Colors.black54
+                                ),
+                                shape: BoxShape.circle,
+                                color: AppColorResources.homeCircleColor),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Icon(Icons.layers, color: AppColorResources.primaryDeepNavy,),
+                                SizedBox(height: 2.h,),
+                                Text(
+                                  "Remove BG",
+                                  style: myStyleAbel(
+                                      16.sp, AppColorResources.primaryDeepNavy, FontWeight.w600),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),  SizedBox(
+                  height: 30.h,
+                ),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 40.w),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Expanded(
+                        child: InkWell(
+                          onTap: (){},
+                          child: Container(
+                            alignment: Alignment.center,
+                            height: 125.h,
+                            width: 130.w,
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                    color: Colors.black54
+                                ),
+                                shape: BoxShape.circle,
+                                color: AppColorResources.homeCircleColor),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Icon(Icons.drafts, color: AppColorResources.primaryDeepNavy,),
+                                SizedBox(height: 2.h,),
+                                Text(
+                                  "Drafts",
+                                  style: myStyleAbel(
+                                      16.sp, AppColorResources.primaryDeepNavy, FontWeight.w600),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 30.h,
+                      ),
+                      Expanded(
+                        child: InkWell(
+                          onTap: (){},
+                          child: Container(
+                            alignment: Alignment.center,
+                            height: 125.h,
+                            width: 130.w,
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                    color: Colors.black54
+                                ),
+                                shape: BoxShape.circle,
+                                color: AppColorResources.homeCircleColor),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Icon(Icons.more_horiz, color: AppColorResources.primaryDeepNavy,),
+                                SizedBox(height: 2.h,),
+                                Text(
+                                  "More Apps",
+                                  style: myStyleAbel(
+                                      16.sp, AppColorResources.primaryDeepNavy, FontWeight.w600),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ),
                     ],
                   ),
                 ),
+                SizedBox(height: 30.h,),
+
+
+
               ],
             ),
           ),
